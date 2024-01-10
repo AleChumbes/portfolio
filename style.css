@@ -1,0 +1,32 @@
+/* this is gonna be for a xl screen */
+.container {
+    max-width: 1400px;
+    
+}
+
+/* navigation  */
+nav {
+    margin-top: 50px
+}
+
+.navbar-brand {
+    font-size: 26px;
+}
+
+/* hero content  */
+
+
+/* change the top margin for different screen sizes */
+.hero {
+    margin-top: 100px;
+}
+
+.hero p {
+    font-size: 24pxs;
+}
+
+.intro {
+    font-size: 30px;
+    font-weight: 400;
+}
+
