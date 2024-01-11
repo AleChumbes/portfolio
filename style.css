@@ -30,3 +30,25 @@ nav {
     font-weight: 400;
 }
 
+/* personal links */
+
+.work-links {
+    list-style: none;
+}
+
+.work-links>li>a {
+    color: black;
+    padding: 0 20px;
+    
+}
+
+.list-inline {
+    display: flex;
+    align-content: center;
+}
+
+@media (max-width: 767px) {
+    .work-links {
+        display: none;
+    }
+}

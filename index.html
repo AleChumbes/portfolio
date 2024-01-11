@@ -12,19 +12,19 @@
     <header>
         <nav class="navbar navbar-light container">
             <a class="navbar-brand" href="#">MyPortfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-expand d-md-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Email <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About me</a>
+                  <a class="nav-link" href="#">Github</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#">Work Experience</a>
                 </li>
               </ul>
             </div>
@@ -35,9 +35,24 @@
 
     <div class="container hero">
       <div class="row">
-        <div class="col-6">
-          <p><span class="intro">Hi, I'm Alejandro Chumbes</span><br>
+        <div class="col-12 col-md-6">
+          <p><span class="intro">Hello, I'm Alejandro Chumbes</span><br>
           <span class="profession">I am a self taught & freelance Web Developer</span></p>
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-center">
+          <ul class="work-links list-inline">
+            <!-- learned how to make a button trigger an email with js  -->
+            <li class="list-inline-item personal-link"><a href="#" onclick="sendEmail()">Email</a></li>
+            <script>
+              function sendEmail () {
+              var email = "mailto:Chumbesale@gmail.com";
+              window.location.href = email;
+              }
+            </script>
+            <li class="list-inline-item personal-link"><a href="https://github.com/AleChumbes?tab=repositories">Github</a></li>
+            <!-- add some work experience here when I have more of it -->
+            <li class="list-inline-item personal-link"><a href="#">Work Experience</a></li>
+          </ul>
         </div>
       </div>
     </div>
