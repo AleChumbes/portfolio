@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is my Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
     <!-- bootstrap v4  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="style.css" type="text/css" rel="stylesheet">
@@ -33,15 +37,14 @@
 
     <!-- main content title -->
 
-    <div class="container hero">
+    <section class="container hero mb-3">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 position-relative">
           <p><span class="intro">Hello, I'm Alejandro Chumbes</span><br>
           <span class="profession">I am a self taught & freelance Web Developer</span></p>
         </div>
-        <div class="col-6 d-flex align-items-center justify-content-center">
+        <div class="col-6 d-flex align-items-center justify-content-end">
           <ul class="work-links list-inline">
-            <!-- learned how to make a button trigger an email with js  -->
             <li class="list-inline-item personal-link"><a href="#" onclick="sendEmail()">Email</a></li>
             <script>
               function sendEmail () {
@@ -55,7 +58,24 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="container projects mt-4">
+      <div class="row justify-content-around">
+        <div class="col-12 col-md-6">
+          <figure>
+            <a href="#"><img src="./images/applecloneR.jpg" class="appleclone img-fluid"></a>
+            <figcaption class="text-center mt-4">Apple Clone using CSS</figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-3">
+          <figure>
+            <a href="#"><img src="./images/newsR.jpg" class="newsclone img-fluid"></a>
+            <figcaption class="text-center mt-4">Newsweek clone using Bootstrap v3</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
 
 <!-- bootstrap and js  -->

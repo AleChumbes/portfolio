@@ -1,3 +1,7 @@
+body {
+    font-family: 'Red Hat Mono', Georgia, 'Times New Roman', Times, serif;
+}
+
 /* this is gonna be for a xl screen */
 .container {
     max-width: 1400px;
@@ -46,6 +50,7 @@ nav {
     display: flex;
     align-content: center;
 }
+
 
 @media (max-width: 767px) {
     .work-links {
