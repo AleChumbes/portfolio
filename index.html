@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
+
+
 <body>
     <header>
         <nav class="navbar navbar-light container">
@@ -22,10 +24,16 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Email <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#" onclick="sendEmail()">Email <span class="sr-only">(current)</span></a>
+                  <script>
+                    function sendEmail () {
+                    var email = "mailto:Chumbesale@gmail.com";
+                    window.location.href = email;
+                    }
+                  </script>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Github</a>
+                  <a class="nav-link" href="https://github.com/AleChumbes?tab=repositories">Github</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Work Experience</a>
@@ -37,10 +45,10 @@
 
     <!-- main content title -->
 
-    <section class="container hero mb-3">
+  <section class="container hero mb-3">
       <div class="row">
-        <div class="col-12 col-md-6 position-relative">
-          <p><span class="intro">Hello, I'm Alejandro Chumbes</span><br>
+        <div class="col-12 col-md-6 ">
+          <p><span class="intro">Hello, I'm Alejandro</span><br>
           <span class="profession">I am a self taught & freelance Web Developer</span></p>
         </div>
         <div class="col-6 d-flex align-items-center justify-content-end">
@@ -58,25 +66,51 @@
           </ul>
         </div>
       </div>
-    </section>
+    
+      <!-- projects and links  -->
 
-    <section class="container projects mt-4">
+    <div class="container projects mt-4">
       <div class="row justify-content-around">
-        <div class="col-12 col-md-6">
-          <figure>
-            <a href="#"><img src="./images/applecloneR.jpg" class="appleclone img-fluid"></a>
-            <figcaption class="text-center mt-4">Apple Clone using CSS</figcaption>
+        <div class="col-12 col-lg-6 d-flex justify-content-center">
+          <figure class="mt-4">
+            <a href="./projects/apple_clone/"><img src="./images/applecloneR.jpg" class="appleclone img-fluid rounded" title="Only made for lg and xl devices"></a>
+            <figcaption class="text-center mt-4" title="Only made for lg and xl devices"><a href="./projects/apple_clone/" class="prolink">Apple Clone using CSS</a></figcaption>
           </figure>
         </div>
-        <div class="col-12 col-md-3">
-          <figure>
-            <a href="#"><img src="./images/newsR.jpg" class="newsclone img-fluid"></a>
-            <figcaption class="text-center mt-4">Newsweek clone using Bootstrap v3</figcaption>
+        <div class="col-12 col-lg-6">
+          <figure class="mt-4">
+            <a href="./projects/newsweek 2/"><img src="./images/newsR.jpg" class="newsclone img-fluid rounded d-block mx-auto"></a>
+            <figcaption class="text-center mt-4"><a href="./projects/newsweek 2/" class="prolink">Newsweek clone using Bootstrap v3</a></figcaption>
           </figure>
         </div>
       </div>
-    </section>
 
+      <div class="container mt-4">
+        <div class="row justify-content-around">
+          <div class="col-12 col-lg-6 order-lg-1">
+            <figure class="mt-4">
+              <a href="./projects/soloairbnb/"><img src="./images/soloairResized123.jpg" class="soloair img-fluid rounded d-block mx-auto"></a>
+              <figcaption class="text-center mt-4"><a href="./projects/soloairbnb/" class="prolink">Airbnb Clone made using Bootstrap v4</a></figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-lg-6 order-md-1 order-lg-2 d-flex justify-content-center">
+            <figure class="mt-4">
+              <a href="./projects/airbnb/"><img src="./images/airv4resized.jpg" class="airbnbv4 img-fluid rounded"></a>
+              <figcaption class="text-center mt-4"><a href="./projects/airbnb/" class="prolink">A second Airbnb Clone made using Bootstrap v4</a></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container mt-4 p-3">
+      <p>A part of <a href="https://www.altcademy.com">Altcademy's</a> Fullstack Program</p>
+    </div>
+    </footer>  
+
+  </section>
+
+  
 
 <!-- bootstrap and js  -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

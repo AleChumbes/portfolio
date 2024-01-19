@@ -2,13 +2,13 @@ body {
     font-family: 'Red Hat Mono', Georgia, 'Times New Roman', Times, serif;
 }
 
-/* this is gonna be for a xl screen */
 .container {
     max-width: 1400px;
-    
 }
 
+
 /* navigation  */
+
 nav {
     margin-top: 50px
 }
@@ -17,22 +17,20 @@ nav {
     font-size: 26px;
 }
 
+
 /* hero content  */
 
 
-/* change the top margin for different screen sizes */
 .hero {
     margin-top: 100px;
 }
 
-.hero p {
-    font-size: 24pxs;
-}
 
 .intro {
     font-size: 30px;
     font-weight: 400;
 }
+
 
 /* personal links */
 
@@ -43,7 +41,12 @@ nav {
 .work-links>li>a {
     color: black;
     padding: 0 20px;
-    
+    text-decoration: none;
+}
+
+.work-links>li>a:hover {
+    border-bottom: rgb(150, 150, 150) 1px solid;
+    padding-bottom: 15px;
 }
 
 .list-inline {
@@ -51,9 +54,33 @@ nav {
     align-content: center;
 }
 
+figcaption>.prolink {
+    color: black;
+    text-decoration: none;
+}
+
+figcaption>.prolink:hover {
+    border-bottom: 1px rgb(150, 150, 150) solid;
+    padding-bottom: 15px;
+}
+
+/* footer  */
+
+footer {
+    max-height: 200px;
+
+}
+
+/* for extra small and small screens */
 
 @media (max-width: 767px) {
     .work-links {
         display: none;
     }
+
+    .hero {
+        position: absolute;
+        top: 160px;
+    }
 }
+
